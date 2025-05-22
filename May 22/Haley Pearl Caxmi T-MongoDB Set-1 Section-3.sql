@@ -1,4 +1,4 @@
-MongoDB Schema & Relationships Exercise Set
+MongoDB Schema & Relationships Exercise Set-1
 Section 3: One-to-Many (Embedded)
 
 1.In the same schooldb , create a teachers collection
