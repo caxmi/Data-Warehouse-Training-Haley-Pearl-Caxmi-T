@@ -1,4 +1,4 @@
-MongoDB Schema & Relationships Exercise Set
+MongoDB Schema & Relationships Exercise Set-1
 Section 2: One-to-One (Embedded)
 
 1.Create a database schooldb 
