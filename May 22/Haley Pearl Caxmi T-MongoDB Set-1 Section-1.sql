@@ -1,6 +1,6 @@
 MongoDB Schema & Relationships Exercise Set
 Section 1: Working with Schemas & Data Types
-1
+
 
 1.Create a database named trainingdb 
 
