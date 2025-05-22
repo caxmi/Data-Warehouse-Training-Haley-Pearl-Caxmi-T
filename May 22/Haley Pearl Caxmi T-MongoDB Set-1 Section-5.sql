@@ -1,4 +1,4 @@
-MongoDB Schema & Relationships Exercise Set
+MongoDB Schema & Relationships Exercise Set-1
 Section 5: $lookup (Join in Aggregation)
 
 1.Use the academia database
