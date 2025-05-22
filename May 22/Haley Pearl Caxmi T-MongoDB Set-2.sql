@@ -1,4 +1,4 @@
-MongoDB Exercise Set #2: Project & Task Tracker
+MongoDB Exercise Set-2 : Project & Task Tracker
 Section 1: Basic Document Modeling & Insertion
 
 1.Create a database called taskmanager
