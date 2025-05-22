@@ -1,4 +1,4 @@
-MongoDB Schema & Relationships Exercise Set
+MongoDB Schema & Relationships Exercise Set-1
 Section 1: Working with Schemas & Data Types
 
 
