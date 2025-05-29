@@ -1,8 +1,8 @@
 def factorial(n):
-    if n == 0 or n == 1:
+    if n <= 1:
         return 1
     return n * factorial(n - 1)
 
-# Example
-print("Factorial of 5 is:", factorial(5))
+num = int(input("Enter a number to find factorial: "))
+print(f"Factorial of {num} is:", factorial(num))
 print()
