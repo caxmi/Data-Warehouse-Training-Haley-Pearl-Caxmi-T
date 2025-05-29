@@ -11,3 +11,11 @@ class Employee(Person):
 
     def display_info(self):
         print(f"Name: {self.name}, Age: {self.age}, ID: {self.emp_id}, Salary: {self.salary}")
+
+name = input("Enter employee name: ")
+age = int(input("Enter employee age: "))
+emp_id = input("Enter employee ID: ")
+salary = float(input("Enter salary: "))
+emp = Employee(name, age, emp_id, salary)
+emp.display_info()
+print()
