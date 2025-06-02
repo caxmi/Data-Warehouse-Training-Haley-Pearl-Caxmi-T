@@ -11,11 +11,11 @@ energy_logs['timestamp'] = pd.to_datetime(energy_logs['timestamp'], errors='coer
 energy_logs['energy_kwh'] = pd.to_numeric(energy_logs['energy_kwh'], errors='coerce')
 cleaned_logs = energy_logs.dropna(subset=['timestamp', 'energy_kwh', 'device_id'])
 
-# 3. Merge devices and rooms for full context
+# Merge devices and rooms for full context
 devices_full = pd.merge(devices, rooms, on='room_id', how='left')  # room_name, floor, area_sqft, purpose
 logs_enriched = pd.merge(cleaned_logs, devices_full, on='device_id', how='left')
 
-# 4. NumPy: Total and Average Energy per Device
+# 3. NumPy: Total and Average Energy per Device
 grouped = logs_enriched.groupby(['device_id', 'device_name', 'room_name'])
 
 # Use NumPy for total and average
@@ -42,12 +42,12 @@ energy_per_device = pd.DataFrame({
     'average_energy_kwh': average_energy
 })
 
-# 5. Pandas: Room-level total energy summary
+# 4. Pandas: Room-level total energy summary
 room_summary = logs_enriched.groupby(['room_id', 'room_name', 'floor', 'area_sqft', 'purpose'])['energy_kwh'].sum().reset_index()
 room_summary.columns = ['room_id', 'room_name', 'floor', 'area_sqft', 'purpose', 'total_energy_kwh']
 
-# 6. Save outputs
+# Save outputs
 energy_per_device.to_csv("energy_per_device_numpy.csv", index=False)
 room_summary.to_csv("room_energy_summary_pandas.csv", index=False)
 
-print("✅ NumPy and Pandas analysis completed. Results saved.")
+print("Results saved")
