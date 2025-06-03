@@ -9,7 +9,7 @@ Original file is located at
 
 from pyspark.sql import SparkSession
 
-spark=SparkSession.builder.appName("EmployeeAnalysis").getOrCreate()
+spark=SparkSession.builder.appName("LargeEmployeeDatasetAnalysis").getOrCreate()
 
 spark
 
