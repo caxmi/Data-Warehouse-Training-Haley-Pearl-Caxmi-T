@@ -24,7 +24,7 @@ spark = SparkSession.builder.appName("SalesAnalysis").getOrCreate()
 path = '/content/drive/MyDrive/Sales_Dataset__500_Records_.csv'
 
 df = spark.read.csv(path, header=True, inferSchema=True)
-df.show(500, truncate=False)
+df.show()
 
 #1.DataFrame Creation and Inspection
 # Load with Pandas
