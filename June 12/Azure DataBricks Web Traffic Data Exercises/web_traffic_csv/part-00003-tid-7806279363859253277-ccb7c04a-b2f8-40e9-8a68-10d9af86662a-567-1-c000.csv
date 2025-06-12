@@ -1,0 +1,3 @@
+UserID,Page,Timestamp,Duration,Device,Country,SessionMinute
+2,Contact,2024-04-10T10:15:00.000Z,25,Desktop,USA,15
+5,Products,2024-04-10T10:20:00.000Z,90,Desktop,India,20
